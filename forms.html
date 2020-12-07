@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="forms.css">
+    <title>Get a Quote!</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>*Logo*</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="./portfolio.html">Our Work</a>
+            </li>
+            <li>
+                <a href="./forms.html">Get a Quote!</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="billboard">
+    </div>
+<section class="page-description">
+    <h1>Get a Quote!</h1>
+    <p class="page-content">To get started, or if you have a question, fill out the Quote Request Page. Once we receive your information, we will
+    send you a quote for your proposed service or refer you to someone else that may be able to help. We will then schedule
+    your service date. When we complete the on-site photography or videography we will then send you your photographs and/or
+    videos in your desired format. We also offer video and photo editing services.</p>
+    
+    
+    <p class="page-content">ervices are tailored for minimal face to face contact in order to ensure the safety of our clients and our team.</p>
+</section>
+
+<form>
+    <div class="input" id="contact-info">
+        <p class="info-header">Contact Information</p>
+    <label for="name">Name:</label><input type="text" id="name" name="name">
+    <label for="phone">Phone:</label><input type="number" id="phone" name="phone">
+    <label for="email">Email:</label><input type="email" id="email" name="email">
+    <label for="company">Company Name (if applicable):</label><input type="text" id="company" name="company">
+</div>
+<div class="input" id="property">
+    <p class="info-header">For what type of property are you requesting service?</p>
+    <input type="radio" id="residential" name="property" value="Residential">
+    <label for="residential">Residential</label>
+    <input type="radio" id="commercial" name="property" value="Commercial">
+    <label for="commercial">Commercial</label>
+</div>
+<div class="input" id="service">
+    <p class="info-header">What type of service are you looking for?</p>
+    <input type="radio" id="video" name="service" value="videography">
+    <label for="videography">Videography</label>
+    <input type="radio" id="photo" name="service" value="photography">
+    <label for="photography">Photography</label>
+    <input type="radio" id="video-photo" name="service" value="both">
+    <label for="both">Mixture of Both</label>
+</div>
+<div class="input" id="address">
+    <p class="info-header">Where is the property located?</p>
+<label for="address">Property Address:</label><input type="text" id="address" name="address">
+</div>
+<div class="input" id="photo-number">
+    <p class="info-header">If wanting photography, how many photos will you need?</p>
+    <label for="photo-number">Number of Photos:</label><input type="photo-number" id="photo-number" name="photo-number">
+    <input type="radio" id="unknown-photos" name="photo-number" value="unknown">
+    <label for="unknown">I need assistance deciding how many photos I will need.</label>
+</div>
+<div class="input" id="edit">
+    <p class="info-header">Do you want your pictures and/or videos edited?</p>
+    <input type="radio" id="yes" name="edit" value="yes">
+    <label for="edit">Yes</label>
+    <input type="radio" id="no" name="edit" value="no">
+    <label for="edit">No</label>
+</div>
+</form>
+
+</body>
+</html>
