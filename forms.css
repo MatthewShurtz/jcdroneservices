@@ -3,20 +3,21 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #f3ae9a;
+  background-color: #d1d5de;
   border-top: black 2px solid;
 }
 
 .input {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .info-header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 35px;
+  font-weight: bold;
 }
 
 label {
@@ -32,4 +33,26 @@ input {
 
 #delivery {
   margin-bottom: 400px;
+}
+
+label,
+input[type="radio"] {
+  display: inline;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  width: 250px;
+  height: 70px;
+  font-size: 30px;
+  margin: 70px auto 250px auto;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transition: 0.7s;
+  background-color: #c3423f;
+  color: white;
 }
