@@ -12,6 +12,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Electrolize", sans-serif;
+  color: var(--black-chocolate);
 }
 
 /* LANDING PAGE */
@@ -69,6 +70,7 @@ li {
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }

@@ -3,8 +3,7 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #d1d5de;
-  border-top: black 2px solid;
+  background-color: #d2d3b5;
 }
 
 .input {
