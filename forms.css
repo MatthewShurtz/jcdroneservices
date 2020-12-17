@@ -39,6 +39,7 @@ input[type="radio"] {
   display: inline;
   cursor: pointer;
   margin-top: 20px;
+  /* Change selector color to #6B815F */
 }
 
 input[type="submit"] {

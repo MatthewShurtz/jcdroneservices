@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="forms.css">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <title>Get a Quote!</title>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <h4>*Logo*</h4>
+            <img src="./img/logo.jpg" alt="Company Logo" class="logo-nav">
         </div>
         <ul class="nav-links">
             <li>
@@ -81,8 +82,20 @@
     <label for="edit"><input type="radio" id="no" name="edit" value="no">
     No</label>   
 </div>
+<div class="input" id="video-length">
+    <p class="info-header">Do you have a specific length of video you need? (If applicable)</p>
+    <label for="video-length"><input type="radio" id="yes" name="edit" value="yes">
+    Yes <input type="text"></label>
+    <label for="video-length"><input type="radio" id="no" name="edit" value="no">
+    No</label>   
+    <label for="video-length"><input type="radio" id="need-help" name="video-length" value="need-help">
+    I need assistance deciding how long of a video I will need. </label>   
+</div>
 <input type="submit">
 </form>
-
+<footer>
+    <p>If you any questions please call us at 803-493-3466 or email us at jcdroneservices@yahoo.com. Our office hours
+        are 9am-5pm.</p>
+</footer>
 </body>
 </html>
