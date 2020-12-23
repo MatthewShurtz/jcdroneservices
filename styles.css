@@ -3,7 +3,7 @@
 :root {
   --mountbatten-pink: #90708c;
   --shadow: #857e61;
-  --black-chocolate: #231c07;
+  --alabaster: #e0e2db;
   --coral: #f78764;
 }
 
@@ -15,31 +15,16 @@
   color: var(--black-chocolate);
 }
 
-/* LANDING PAGE */
-.pics {
-  background-color: black;
-  width: 100%;
-  height: 500px;
-}
-
-/* ABOUT PAGE */
-#logo-nav {
-  width: 70px;
-  height: 60px;
-}
-
-.page-content {
-  margin-top: 16px;
-}
+/* NAV BAR */
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 8.5vh;
   position: fixed;
   width: 100%;
-  background-color: var(--black-chocolate);
+  background-color: var(--alabaster);
   animation: fadein 1s;
 }
 
@@ -64,13 +49,17 @@ nav {
 }
 
 .logo-nav {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 60px;
 }
 
 li {
   list-style: none;
   font-size: 20px;
+}
+
+li > .nav-link-color {
+  color: black;
 }
 
 a {
@@ -80,24 +69,26 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* STYLE ACROSS ALL PAGES */
 
-.billboard {
-  width: 100%;
-  height: 475px;
+footer {
+  margin: 50px auto 50px auto;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
 }
 
-.billboard > img {
-  width: 100%;
-  height: 475px;
+.page-description {
+  text-align: center;
+  margin: 40px 10% 100px 10%;
+  font-size: 22px;
 }
 
-#catawba-pic-home {
+/* LANDING PAGE */
+.pics {
+  background-color: black;
   width: 100%;
-  height: 800px;
-}
-
-#logo-overlay {
-  margin-top: -300px;
+  height: 500px;
 }
 
 #logo-fadein {
@@ -121,10 +112,34 @@ a:hover {
   }
 }
 
-.page-description {
-  text-align: center;
-  margin: 40px 10% 100px 10%;
-  font-size: 22px;
+#logo-overlay {
+  margin-top: -300px;
+}
+
+#landingpage > #billboard-home > #catawba-pic-home {
+  width: 100%;
+  height: 800px;
+  /* filter: blur(10px); */
+}
+
+/* ABOUT PAGE */
+
+.page-content {
+  margin-top: 16px;
+}
+
+.billboard {
+  width: 100%;
+  height: 475px;
+}
+
+.billboard > img {
+  width: 100%;
+  height: 475px;
+}
+
+.billboard > p {
+  padding-top: 200px;
 }
 
 #team-intro {
@@ -153,9 +168,30 @@ a:hover {
   margin-top: 100px;
 }
 
-footer {
-  margin: 50px auto 50px auto;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
+/* HOW IT WORKS PAGE */
+
+.hiw-header {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.hiw-header > h1 {
+  font-size: 35px;
+}
+
+.hiw-header > p {
+  font-size: 25px;
+}
+
+#guide {
+  display: block;
+  margin-top: 100px;
+}
+
+#guide > li {
+  list-style: decimal;
+  text-align: left;
+  margin-left: 18%;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
