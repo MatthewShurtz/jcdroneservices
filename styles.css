@@ -69,6 +69,28 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 900px) {
+  nav {
+    min-height: 7vh;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+
+  li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+  }
+  .logo {
+    display: none;
+  }
+}
 /* STYLE ACROSS ALL PAGES */
 
 footer {
@@ -113,13 +135,24 @@ footer {
 }
 
 #logo-overlay {
-  margin-top: -300px;
+  margin-top: -375px;
 }
 
 #landingpage > #billboard-home > #catawba-pic-home {
   width: 100%;
   height: 800px;
-  /* filter: blur(10px); */
+}
+
+@media (max-width: 900px) {
+  #logo-fadein {
+    width: 300px;
+    height: 300px;
+  }
+
+  #landingpage > #billboard-home > #catawba-pic-home {
+    width: 100%;
+    height: 900px;
+  }
 }
 
 /* ABOUT PAGE */
