@@ -19,6 +19,15 @@ form {
   font-weight: bold;
 }
 
+@media (max-width: 900px) {
+  .info-header {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-size: 30px;
+  }
+}
+
 label {
   font-size: 25px;
 }
@@ -30,6 +39,12 @@ input {
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  input {
+    width: 90%;
+  }
+}
+
 #delivery {
   margin-bottom: 400px;
 }
@@ -39,7 +54,16 @@ input[type="radio"] {
   display: inline;
   cursor: pointer;
   margin-top: 20px;
-  /* Change selector color to #6B815F */
+}
+
+@media (max-width: 900px) {
+  label,
+  input[type="radio"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
 }
 
 input[type="submit"] {
@@ -55,4 +79,10 @@ input[type="submit"]:hover {
   transition: 0.7s;
   background-color: #c3423f;
   color: white;
+}
+
+@media (max-width: 900px) {
+  footer {
+    width: 95%;
+  }
 }
