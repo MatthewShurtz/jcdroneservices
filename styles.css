@@ -85,7 +85,7 @@ a:hover {
   li {
     display: inline-flex;
     justify-content: space-evenly;
-    font-size: 13px;
+    font-size: 15px;
   }
   .logo {
     display: none;
