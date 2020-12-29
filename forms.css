@@ -13,6 +13,13 @@ form {
   align-items: center;
 }
 
+@media (max-width: 900px) {
+  .input {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .info-header {
   margin-bottom: 10px;
   font-size: 35px;
@@ -63,14 +70,6 @@ input[type="radio"] {
     flex-direction: column;
     align-items: center;
     width: 90%;
-  }
-
-  input[type="radio"] {
-    -webkit-webkit: flex 1;
-    -moz-webkit: flex 1;
-    -ms-webkit: flex 1;
-    -o-webkit: flex 1;
-    justify-content: center;
   }
 }
 
