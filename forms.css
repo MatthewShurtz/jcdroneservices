@@ -49,6 +49,7 @@ input {
 @media (max-width: 900px) {
   input {
     width: 90%;
+    padding: auto;
   }
 }
 

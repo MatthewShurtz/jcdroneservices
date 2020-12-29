@@ -25,7 +25,17 @@ nav {
   position: fixed;
   width: 100%;
   background-color: var(--alabaster);
+  -webkit-animation: fadein 1s;
   animation: fadein 1s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -126,9 +136,21 @@ footer {
   width: 500px;
   height: 500px;
   box-shadow: 30px 30px 55px black;
+  -webkit-animation-name: fadein-logo;
   animation-name: fadein-logo;
+  -webkit-animation-duration: 5s;
   animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein-logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein-logo {
