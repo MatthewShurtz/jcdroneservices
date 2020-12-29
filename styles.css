@@ -100,6 +100,12 @@ footer {
   justify-content: center;
 }
 
+@media (max-width: 900px) {
+  footer {
+    width: 90%;
+    font-size: 16px;
+  }
+}
 .page-description {
   text-align: center;
   margin: 40px 10% 100px 10%;
@@ -240,4 +246,24 @@ footer {
   margin-left: 18%;
   font-size: 30px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .hiw-header {
+    padding-top: 150px;
+    text-align: center;
+    width: 90%;
+  }
+
+  #guide {
+    list-style: decimal;
+  }
+
+  #guide > li {
+    display: list-item;
+    margin: auto;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
