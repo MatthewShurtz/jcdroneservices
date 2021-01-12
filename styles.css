@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 :root {
   --mountbatten-pink: #90708c;
@@ -11,8 +11,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Electrolize", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--black-chocolate);
+  /* text-transform: uppercase; */
 }
 
 /* NAV BAR */
@@ -104,15 +105,27 @@ a:hover {
 /* STYLE ACROSS ALL PAGES */
 
 footer {
-  margin: 50px auto 50px auto;
+  height: 150px;
+  text-align: center;
   font-size: 22px;
-  display: flex;
-  justify-content: center;
+  background-color: var(--alabaster);
+  overflow: auto;
+}
+#footer-text {
+  margin-top: 40px;
+}
+
+.circle-divider {
+  height: 15px;
+  width: 15px;
+  background-color: #7a776a;
+  border-radius: 50%;
+  display: inline-flex;
 }
 
 @media (max-width: 900px) {
   footer {
-    width: 90%;
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -242,6 +255,12 @@ footer {
   margin-top: 100px;
 }
 
+/* PORTFOLIO */
+header {
+  padding-top: 90px;
+  font-size: 50px;
+  text-align: center;
+}
 /* HOW IT WORKS PAGE */
 
 .hiw-header {
@@ -257,16 +276,19 @@ footer {
   font-size: 25px;
 }
 
-#guide {
+#hiw-subheader {
+  margin: auto 8%;
+}
+/* #guide {
   display: block;
   margin-top: 100px;
-}
+} */
 
 #guide > li {
   list-style: decimal;
   text-align: left;
-  margin-left: 18%;
-  font-size: 30px;
+  margin-left: 12%;
+  font-size: 24px;
   margin-bottom: 15px;
 }
 
@@ -288,4 +310,34 @@ footer {
     text-align: left;
     margin-bottom: 10px;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > .hiw {
+  margin-right: auto;
+  flex: 2;
+}
+
+.container > .helpful-links {
+  margin-left: auto;
+  padding-top: 30%;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.helpful-links > ul > li {
+  margin: 30px 0;
+  margin-right: 8%;
+  font-size: 22px;
 }
